@@ -1,0 +1,135 @@
+/* SPLIT SECTION */
+.splitSection {
+    padding: 10vh 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstHalfAbout {
+    padding: auto;
+    order: 2;
+    text-align: left;
+}
+
+.secondHalfAbout {
+    padding-bottom: 5vh;
+    order: 1;
+}
+
+/* QUOTE */
+.quoteWithLine {
+    padding-left: 10px;
+    margin: 40px 10px;
+    position: relative;
+}
+
+.quoteText {
+    font-size: 2rem;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 0.86px;
+    padding-left: 10px;
+}
+
+.quoteText:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 4px;
+    border-left: 4px var(--secondaryColor) solid;
+}
+
+/* quote */
+.quote{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #4A4A45;
+    line-height: 120%;
+    margin: 3vh auto;
+    padding: 1vh 20px;
+}
+
+.interest{
+    display: grid; place-items: center; margin-top: 40px;
+}
+
+/* FAQ */
+.faqQuestions{
+    margin: 8vh 20px;
+}
+
+.faqQuestions{
+    align-items: flex-start;
+}
+
+details{margin: 20px auto; }
+summary{font-weight: 500; margin-bottom: 10px; cursor: pointer; font-size: 2rem;}
+summary:hover{opacity: 0.7;}
+
+/* media queries */
+@media all and (min-width: 500px) {
+    .splitSection {
+        max-width: 500px;
+        margin: auto;
+        padding: 5vh 20px;
+    }
+
+    .quoteText {
+        font-size: 2.8rem;}
+
+    .quote{
+    font-size: 3.2rem;
+    margin: 0vh auto;
+    padding: 0vh 14vw;
+}
+
+/* FAQ */
+.faqQuestions{
+    margin: 8vh auto; max-width: 400px; 
+}
+
+}
+
+@media all and (min-width: 1000px) {
+    .splitSection {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        align-items: center;
+        justify-content: center;
+        margin: 10vh auto;
+        flex-direction: inherit;
+    }
+
+    .firstHalfAbout {
+        width: 50%;
+        padding-right: 20px;
+        margin-right: 60px;
+
+        order: 1;
+    }
+
+    .secondHalfAbout {
+        width: 50%;
+        padding-top: 0px;
+        order: 1;
+    }
+
+    .secondHalfAbout img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* FAQ */
+.faqQuestions{
+    display: flex;  max-width: none; justify-content: center;
+}
+
+.faqContainer{
+    width: 50%; max-width: 500px; margin: 0px 50px;
+}
+
+}

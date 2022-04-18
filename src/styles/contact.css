@@ -1,0 +1,26 @@
+.contactPage{
+    margin: 5vh 20px;
+}
+.contactPage h1{
+    text-align: center;
+}
+
+.contactPage a{
+    border-bottom: 3px solid var(--secondaryColor);
+}
+
+.contactPage a:hover{
+    border-bottom: 3px solid var(--primaryColor);
+}
+
+.contactIntro{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+@media all and (min-width: 800px) {
+    .contactPage{
+        margin: 10vh 20px;
+    }
+}

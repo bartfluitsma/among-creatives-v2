@@ -1,0 +1,100 @@
+/* cards packages */
+.containerCards{
+    margin: 5vh auto 0px auto;
+}
+
+.packageCard {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 10px;
+}
+
+.packageCard img{
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.packageCard p {
+    padding: 5px 20px 20px 20px;
+    margin: 0;
+}
+
+.packageCard h4{
+    font-size: 2.6rem;
+    font-family: var(--headerFont);
+}
+
+.slick-next {
+    display: none !important;
+    transition: 1s;
+}
+
+.slick-current {
+    transform: scale(1.07);
+    transition: 1s;
+}
+
+.slick-dots{
+    margin: 25px auto;
+}
+
+/* packages */
+.packages h3, .packages p{text-align: center; max-width: 500px; margin: 10px auto; padding: 0px 20px;}
+
+.packageCard p {
+    text-align: center;
+    margin-top: -5px;
+    padding: 0px 10px;
+    font-size: 1.6rem;
+}
+
+.bookNowButton{display: grid; place-items: center;}
+
+@media all and (min-width: 500px) {
+    .slick-current {
+        transform: none;
+    }    
+
+
+    .hideTablet{display: none;}
+}
+
+@media all and (min-width: 1100px) {
+    .hideTablet{display: inline-block;}
+
+    .packageCard {
+        cursor: pointer;
+        text-align: center;
+        padding: 30px 20px 0px 20px;
+    }
+
+    .packageCard h4{
+        font-size: 2.5rem;
+    }
+    
+    .packageCard h4{
+        font-size: 2.4rem;
+    }
+    .containerCards {
+        width: 1000px;
+        margin: 2vh auto 0px auto;
+    }
+
+    .packageCard{margin: 10px 0px;}
+
+    .smallerPackage{
+        transform: scale(1);
+    }
+
+    .middlePackage {
+        transform: scale(1.0);
+    }
+
+    .slick-current {
+        transform: none;
+    }
+
+}

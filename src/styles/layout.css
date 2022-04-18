@@ -1,0 +1,234 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html, body {
+    line-height: 1;
+    min-height: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.gatsby-image-wrapper{
+    will-change: auto;
+}
+
+/* variable styles */
+/* color */
+:root {
+    --primaryColor: #E2C8AA;
+    --secondaryColor: #EBDFD3;
+    --accentColor: #FBF8F1;
+    --darkColor: #4F4F4F;
+    --lightColor: #F7F7F7;
+    --headerFont: 'Cormorant', serif;
+    --bodyFont: 'Forum', cursive;
+    --accentFont: 'Cormorant', serif;
+}
+
+/* font */
+
+/* Base Styles 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    font-style: italic;
+}
+
+hr {
+    margin: 5vh auto;
+    width: 50%;
+    border: 0;
+    border-top: 2px solid rgb(186 186 170 / 40%);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+/* headers styles */
+h1, h2, h3, h4 {
+    font-family: sans-serif;
+    font-family: var(--headerFont);
+    font-weight: 400;
+    color: var(--darkColor);
+    line-height: 120%;
+    margin: 15px auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+@media all and (min-width: 800px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    hr {
+        margin: 5vh auto 9vh auto;
+        width: 30%;
+    }
+
+}
+
+/* text styles */
+p, summary, details, li {
+    font-family: var(--bodyFont);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.08em;
+    color: var(--darkColor);
+}
+
+a {
+    font-family: var(--bodyFont);
+    letter-spacing: 0.95px;
+    color: #4A4A45;
+}
+
+strong{font-weight: 700;}
+
+/* Buttons */
+.primaryButton {
+    padding: 12px 25px;
+    font-family: var(--accentFont);
+    font-weight: 500;
+    font-size: 2rem;
+    background: var(--accentColor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+}
+
+.primaryButton:hover {
+    text-decoration: none;
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    border: none;
+}
+
+/* secondary (ghost) button */
+.secondaryButton {
+    padding: 12px 25px;
+    font-family: var(--accentFont);
+    font-weight: 500;
+    font-size: 1.8rem;
+    background: transparent;
+    box-shadow: none;
+    margin: 20px auto;
+    border: 2px solid var(--darkColor);
+    cursor: pointer;
+}
+
+.secondaryButton:hover {
+    background-color: var(--darkColor);
+    color: #fff;
+}
+
+/* main titles on pages */
+.mainTitle {
+    padding: 15vh 20px 0px 20px;
+    text-align: center;
+}
+
+/* QUOTE BANNER */
+.quoteBanner {
+    background-color: var(--primaryColor);
+    background-image: url('../images/homepage/dried-flower-background.png');
+    background-size: cover;
+    margin: 3vh auto;
+    padding: 8vh 5vw;
+    text-align: center;
+}
+
+.quoteBanner q, .quoteBanner p {
+    font-family: var(--headerFont);
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--lightColor);
+    line-height: 120%;
+}
+
+
+@media all and (min-width: 600px) {
+
+    /* QUOTE BANNER */
+    .quoteBanner {
+        margin: 10vh auto;
+        padding: 12vh 20vw;
+    }
+
+    .quoteBanner q, .quoteBanner p {
+        font-size: 3.4rem;
+
+    }
+}
+
+@media all and (min-width: 800px) {
+    .mainTitle {
+        padding: 8vh 20px 0px 20px;
+    }
+}

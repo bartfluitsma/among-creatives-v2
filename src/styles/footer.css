@@ -1,0 +1,151 @@
+/* instagram images squares */
+.instagramImagesContainer {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.instagramImagesContainer div:nth-of-type(1),
+.instagramImagesContainer div:nth-of-type(2),
+.instagramImagesContainer div:nth-of-type(5),
+.instagramImagesContainer div:nth-of-type(6) {
+    display: none;
+}
+
+.instagramFooter {
+    position: relative;
+    margin-top: 10vh;
+}
+
+.instaTextFollow {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* text overlay towards insta */
+.instaLinkText {
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.91);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* navigation footer */
+/* ----------------------------------- */
+.fullContainerFooter {
+    display: grid;
+    place-items: center;
+}
+
+.footerNav {
+    background-color: #FEF9F2;
+    padding: 5vh 20px;
+}
+
+.twoColumnsLinks {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footerLogo {
+    padding: 5vh 20px;
+    width: 160px;
+}
+
+.footerLinks {
+    margin: 0;
+}
+
+.copyRight {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footerIcon {
+    width: 40px;
+    color: var(--darkColor)
+}
+
+.footerIcon:hover {
+    opacity: 0.6;
+    border: none;
+}
+
+.footerIconLinks a:hover {
+    border: none;
+}
+
+.socialIconsContainer .footerLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer li {
+    padding: 20px 25px;
+}
+
+.footer li a {
+    font-size: 2rem;
+}
+
+@media all and (min-width: 600px) {
+    .footerNavItems {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media all and (min-width: 800px) {
+
+    .fullContainerFooter {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10vw;
+    }
+
+    .fullContainerFooter ul {
+        padding-right: 4vw;
+    }
+
+    .fullContainerFooter li {
+        padding: 20px 30px;
+    }
+
+    .socialIconsContainer .footerLinks {
+        margin-top: 0px;
+    }
+
+    .instaLinkText {
+        top: 60%;
+        font-size: 2rem;
+        padding: 10px 40px;
+    }
+
+    .instagramImagesContainer div:nth-of-type(2),
+    .instagramImagesContainer div:nth-of-type(5) {
+        display: block;
+    }
+
+}
+
+@media all and (min-width: 1200px) {
+
+    .instagramImagesContainer div:nth-of-type(1),
+    .instagramImagesContainer div:nth-of-type(6) {
+        display: block;
+    }
+
+
+}

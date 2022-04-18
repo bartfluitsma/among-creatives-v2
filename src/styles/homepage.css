@@ -1,0 +1,159 @@
+/* banner */
+.Banner {
+    padding: 0;
+    background-image: url(../images/homepage/Earrings-on-travertin-with-shadow-of-flowers-tn.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(90vh - 90px);
+    width: 100%;
+    position: relative;
+}
+
+.Banner h1 {
+    text-align: center;    
+    color: #fff;
+    font-size: 3.8rem;
+    margin: 20px 50px;
+}
+
+/* container with text and button */
+.containerTextCTA {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+}
+
+.containerTextCTA p{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* color accent line above about text */
+.colorLineAccent{
+    height: 5px;
+    width: 200px;
+    background-color: var(--accentColor);
+    margin: 20px auto;
+}
+
+/* GRID */
+.outer-container-grid{margin: 10vh 20px 8vh 20px;}
+
+.grid-container {
+    height: 900px;
+    width: auto;
+    max-width: 400px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr 0.9fr 0.9fr;
+}
+
+.grid-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-item-1 {
+    background-image: url(../images/homepage/hand-taking-toothbrush-out-of-holder.jpg);
+    grid-row: 1;
+}
+
+.grid-item-2 {
+    background-image: url(../images/homepage/ring-in-bohemian-setting.jpg);
+    grid-row: 1;
+}
+
+.grid-item-3 {
+    background-image: url(../images/homepage/face-oil-organic-product.jpg);
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.grid-item-4 {
+    background-image: url(../images/homepage/necklace-with-shallow-depth-of-field-on-white-linen.jpg);
+    grid-column: 1 / -1;
+    grid-row: 3 / 5;
+}
+
+.buttonContainer {
+    display: grid;
+    place-items: center;
+}
+
+
+/* MEDIA QUERIES BANNER */
+@media all and (min-width: 600px) {
+    .Banner {
+        margin: 15vh 0px 5vh 0px;
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        background-image: url(../images/homepage/Earrings-on-travertin-with-shadow-of-flowers-tn.jpg);
+    }
+
+    .containerTextCTA h1{
+        font-size: 5rem;
+    }
+    
+    .containerTextCTA p{
+        font-size: 1.8rem;
+    }
+
+.outer-container-grid{margin: 15vh 20px 10vh 20px;}
+
+
+    /* GRID */
+    .grid-container {
+        height: 600px;
+        width: auto;
+        max-width: 1000px;
+        margin: 5vh auto;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1.8fr;
+        grid-template-rows: 1.3fr 1fr;
+    }
+
+    .grid-item-1 {
+        grid-row: 1;
+    }
+
+    .grid-item-2 {
+        grid-row: 1;
+    }
+
+    .grid-item-3 {
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+
+    .grid-item-4 {
+        grid-column: 3;
+        grid-row: 1 / 3;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .Banner {
+        height: calc(100vh - 115px) ;
+        margin: 3vh auto;
+        background-position: center;
+        padding: 0;
+    }
+
+    .containerTextCTA {
+        position: absolute;
+        bottom: auto;
+        left: 0;
+        transform: translate(35%, 65%);
+        width: 500px;
+    }
+}
