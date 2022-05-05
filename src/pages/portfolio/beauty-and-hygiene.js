@@ -35,27 +35,16 @@ const BeautyAndHygienePage = ({data}) => (
                 <Masonry breakpointCols={breakpointColumns}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column">
-                    {
-                    data.allFile.edges.map(image => (
-                        <div key={
-                            image.node.id
-                        }>
-                            <a href={
-                                    image.node.publicURL
-                                }
-                                arial-label={
-                                    image.node.base.split('-').join(' ').split('.')[0]
-                            }>
-                                <GatsbyImage image={
-                                        image.node.childImageSharp.gatsbyImageData
-                                    }
-                                    alt={
-                                        image.node.base.split('-').join(' ').split('.')[0]
-                                    }/>
+                    {data.allFile.edges.map(image => (
+                        <div key={image.node.id}>
+                            <a href={image.node.publicURL}
+                                arial-label={image.node.base.split('-').join(' ').split('.')[0]}>
+                                <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
+                                    alt={image.node.base.split('-').join(' ').split('.')[0]}/>
                             </a>
                         </div>
-                    ))
-                } </Masonry>
+                    ))} 
+                </Masonry>
             </SRLWrapper>
         </SimpleReactLightbox>
     </Layout>

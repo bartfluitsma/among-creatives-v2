@@ -9,17 +9,24 @@ import Masonry from 'react-masonry-css'
 
 // custom css
 const breakpointColumns = {
-    default: 3,
-    // 1100: 3,
-    700: 2,
-    // 500: 1
+  default: 3,
+  700: 2,
 };
 
 // options lightbox
 const options = {
+  settings: {
+    disablePanzoom: true,
+  },
+  caption: {
+    showCaption: false,    
+    captionColor: 'transparent',
+  },
   buttons: {
     showDownloadButton: false,
-  }
+  },
+  // thumbnails: {},
+  // progressBar:{},
 }
 
 const JewelryPage = ({data}) => (
@@ -35,27 +42,16 @@ const JewelryPage = ({data}) => (
                 <Masonry breakpointCols={breakpointColumns}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column">
-                    {
-                    data.allFile.edges.map(image => (
-                        <div key={
-                            image.node.id
-                        }>
-                            <a href={
-                                    image.node.publicURL
-                                }
-                                arial-label={
-                                    image.node.base.split('-').join(' ').split('.')[0]
-                            }>
-                                <GatsbyImage image={
-                                        image.node.childImageSharp.gatsbyImageData
-                                    }
-                                    alt={
-                                        image.node.base.split('-').join(' ').split('.')[0]
-                                    }/>
+                    {data.allFile.edges.map(image => (
+                        <div key={image.node.id}>
+                            <a href={image.node.publicURL}
+                                arial-label={image.node.base.replace(/\d+/g, '').split('-').join(' ')}>
+                                <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
+                                    alt={image.node.base.replace(/\d+/g, '').split('-').join(' ')}/>
                             </a>
                         </div>
-                    ))
-                } </Masonry>
+                    ))} 
+                </Masonry>
             </SRLWrapper>
         </SimpleReactLightbox>
     </Layout>
@@ -64,21 +60,21 @@ const JewelryPage = ({data}) => (
 export default JewelryPage
 
 export const query = graphql `
-  query{
-    allFile(
-      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "jewelry"}}
-      sort: {order: DESC, fields: base}
-    ) {
-      edges {
-        node {
-          base
-          id
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR)
-          }
-          publicURL
+{
+  allFile(
+    filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "accessories"}}
+    sort: {order: DESC, fields: base}
+  ) {
+    edges {
+      node {
+        base
+        id
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: DOMINANT_COLOR)
         }
+        publicURL
       }
     }
   }
+}
 `
