@@ -31,7 +31,7 @@ const options = {
 
 const JewelryPage = ({data}) => (
     <Layout>
-        <Seo title="Accessories"/>
+        <Seo title="Jewelry"/>
         <div className="mainText">
             <h1>Jewelry</h1>
             <p>Welcome to the jewelry page.</p>
@@ -62,7 +62,7 @@ export default JewelryPage
 export const query = graphql `
 {
   allFile(
-    filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "accessories"}}
+    filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "jewelry"}}
     sort: {order: DESC, fields: base}
   ) {
     edges {

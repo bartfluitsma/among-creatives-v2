@@ -22,7 +22,7 @@ const BookingPage = () => {
                 <label>
                     What is your name?<span className="asterix">*</span>
                     <br/>
-                    <input type="text" name="name" id="name" required/>
+                    <input type="text" pattern="[a-z]*" name="name" id="name" required/>
                 </label>
 
                 {/* email address */}

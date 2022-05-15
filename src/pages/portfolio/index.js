@@ -33,14 +33,14 @@ const PortfolioPage = () => {
         </div>
         </Link>
 
-        <Link to="/portfolio/stationary">
+        <Link to="/portfolio/stationery">
         <div className="categoriesPortfolio">
           <div className="categoryCard">
           <StaticImage src='../../images/categories/stationary-card-product-photo.jpg'
             alt='stationary-card-product-photo'
             placeholder="blurred"
           />
-          <h2>Stationary</h2>
+          <h2>Stationery</h2>
           </div>
         </div>
         </Link>

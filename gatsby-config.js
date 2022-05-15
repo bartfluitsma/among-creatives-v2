@@ -32,13 +32,16 @@ module.exports = {
         icon: `src/images/among-creatives-icon.png`, // This path is relative to the root of the site.
       },
     },{
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
         fonts: [
           `Cormorant\:200,300,300i,400,500,600`,
           `Forum\:200,400,500,600`
         ],
-        display: 'swap'
+        display: 'swap',
+        attributes: {
+          rel: "stylesheet preload prefetch",
+        },
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
