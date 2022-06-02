@@ -19,6 +19,26 @@
     margin: 7vh 20px;
 }
 
+.containerIncludes{
+    max-width: 700px;
+    margin: auto;
+}
+
+.containerIncludes {
+    padding-top: 40px;
+}
+
+.containerIncludes ul {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.containerIncludes li {
+    padding: 0;
+    margin: 10px 0px 10px 20px;
+    list-style-type: disc;
+}
+
 .packagesContainer h2 {
     margin-top: 20px;
     font-size: 3.5rem;
@@ -49,6 +69,11 @@
     order: 2;
 }
 
+.monthlyPackage{
+    padding-bottom: 8vh;
+    margin-top: 5vh;
+}
+
 .imageRight{
     order: 1;
 }
@@ -61,7 +86,20 @@
 }
 
 .priceList p{
+    max-width: 400px;
+    margin: auto;
+}
+
+.priceList p{
     margin-bottom: -4vh;
+}
+
+.contactPackagesDiv{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 8vh;
+    margin-top: 5vh;
 }
 
 @media all and (min-width: 800px) {
@@ -90,7 +128,7 @@
     .packagesContainer {
         display: flex;
         max-width: 800px;
-        margin: 8vh auto;
+        margin: 4vh auto;
         align-items: center;
     }
 
@@ -102,6 +140,7 @@
     .imageRight {
         margin-left: 40px;
         width: 40%;
+        min-width: 240px;
     }
 
 

@@ -27,7 +27,7 @@ const BookingPage = () => {
 
                 {/* email address */}
                 <label>
-                    What is your email address?<span className="asterix">*</span>
+                    What is your email address<span className="asterix">*</span>
                     <br/>
                     <input type="email" name="email" id="email" required/>
                 </label>
@@ -164,12 +164,13 @@ const BookingPage = () => {
 
                     </div>
                     <br/>
-                    <br/>
+                    <br className="breakBottom"/>
                     <label className="specificDate">
                         <i>On a specific date</i>
                         <input type="date" id="start" name="trip-start"></input>
                     </label>
                 </div>
+                <br/>
                 <br/>
                 <br/> {/* button to send form */}
                 <button type="submit">Request proposal</button>

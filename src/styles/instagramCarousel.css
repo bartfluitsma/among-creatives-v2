@@ -1,0 +1,9 @@
+.containerCarousel{
+    display: flex;
+    width: 100%;
+}
+
+.imageInsta{
+    height: 300px;
+    width: 300px;
+}

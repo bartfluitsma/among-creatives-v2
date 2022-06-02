@@ -22,12 +22,12 @@ const options = {
   }
 }
 
-const AccessoriesPage = ({data}) => (
+const FoodPage = ({data}) => (
     <Layout>
         <Seo title="Accessories"/>
         <div className="mainText">
-            <h1>Accessories</h1>
-            <p>Welcome to the accessories page.</p>
+            <h1>Food</h1>
+            <p>Welcome to the food gallery.</p>
         </div>
 
         <SimpleReactLightbox>
@@ -50,12 +50,12 @@ const AccessoriesPage = ({data}) => (
     </Layout>
 )
 
-export default AccessoriesPage
+export default FoodPage
 
 export const query = graphql `
   query{
     allFile(
-      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "accessories"}}
+      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "food"}}
       sort: {order: DESC, fields: base}
     ) {
       edges {

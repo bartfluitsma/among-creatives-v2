@@ -40,12 +40,12 @@ const AboutPage = () => (
 
           </p>
           <br /><br />
-          <Link to='/book'>
-            <button className="primaryButton">Let's work together</button>
+          <Link to='/contact'>
+            <button className="primaryButton">Contact me</button>
           </Link>
         </div>
         <div className="secondHalfAbout">
-          <StaticImage src='../images/homepage/nass-product-photographer-working.png'
+          <StaticImage src='../images/about/Smiling product photographer Nass sitting outside.jpg'
             alt='Among Creatives logo'
             placeholder="blurred"
           />
@@ -84,7 +84,7 @@ const AboutPage = () => (
             <summary>
               Do I have to pay for the delivery of the product?
             </summary>
-            <p>No, the delivery is free of charge and I’ll take care of the cost. I’ll create a label for your package and you just need to drop it at a post office and I will take care of the rest ;) </p>
+            <p>No, the delivery is free of charge. I’ll take care of the cost. You just need to drop it at a post office and I will take care of the rest ;) </p>
           </details>
           <details>
             <summary>
@@ -104,7 +104,7 @@ const AboutPage = () => (
             <summary>
             How will I receive my photos?
             </summary>
-            <p>After the shoot, I will send you a link to your online gallery where you will choose your photos and can directly download them (the number of photos you can choose will depend on your package). </p>
+            <p>After the shoot, I will send you a link to your online gallery where you will choose your photos and can directly download them . </p>
           </details>
           <details>
             <summary>

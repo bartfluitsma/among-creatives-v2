@@ -24,7 +24,7 @@ const IndexPage = () => (
 
       <div className="splitSection">
         <div className="firstHalf">
-          <h2>Hey, I’m Nass, a product and lifestyle photographer for sustainable and conscious businesses.</h2>
+          <h2>Hi, I’m Nass, a product and lifestyle photographer for sustainable and conscious businesses.</h2>
           <div className="colorLineAccent"></div>
           <br />
           <p>I love creating fresh, minimalistic and clear visuals that will boost your sales and get your audience to stop scrolling!

@@ -81,6 +81,18 @@ const PortfolioPage = () => {
         </div>
         </Link>
 
+        <Link to="/portfolio/food">
+        <div className="categoriesPortfolio">
+          <div className="categoryCard">
+          <StaticImage src='../../images/categories/Stack of almond chipped, chocolate flavoured cookies on white background.jpg'
+            alt='Rings-laying-on-book'
+            placeholder="blurred"
+          />
+          <h2>Food</h2>
+          </div>
+        </div>
+        </Link>
+
         </div>
 
     </Layout>

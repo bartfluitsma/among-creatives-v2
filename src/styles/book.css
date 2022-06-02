@@ -10,12 +10,6 @@ input:invalid{
     animation: shake 300ms !important;
 }
 
-@keyframes shake {
-    25% {transform: translateX(4px);}
-    50% {transform: translateX(-4px);}
-    75% {transform: translateX(4px);}
-}
-
 @media all and (min-width: 800px) {
     .bookingContainer{
         padding: 8vh 20px 4vh 20px;

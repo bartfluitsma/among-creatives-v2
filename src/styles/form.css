@@ -152,4 +152,16 @@ form button:hover{
         padding: 0;
         margin-bottom: 0px;
     }
+
+    .textCheckbox:first-of-type{
+        margin-top: 40px;
+    }
+
+    .textCheckbox:last-of-type{
+        margin-top: 40px;
+    }
+
+    .breakBottom{
+        margin-bottom: 110px;
+    }
 }

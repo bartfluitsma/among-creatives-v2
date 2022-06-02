@@ -27,7 +27,7 @@ const BeautyAndHygienePage = ({data}) => (
         <Seo title="Beauty and hygiene"/>
         <div className="mainText">
             <h1>Beauty and hygiene</h1>
-            <p>Welcome to the stationary page.</p>
+            <p>Welcome to beauty and hygiene gallery.</p>
         </div>
 
         <SimpleReactLightbox>
