@@ -17,7 +17,7 @@ const breakpointColumns = {
 
 // options lightbox
 const options = {
-  buttons: {
+  buttons: { 
     showDownloadButton: false,
   }
 }
