@@ -41,7 +41,7 @@
 }
 
 /* quote */
-.quote{
+.quote {
     text-align: center;
     font-family: 'Cormorant', serif;
     font-size: 2.2rem;
@@ -52,22 +52,35 @@
     padding: 1vh 20px;
 }
 
-.interest{
-    display: grid; place-items: center; margin-top: 40px;
+.interest {
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
 }
 
 /* FAQ */
-.faqQuestions{
+.faqQuestions {
     margin: 8vh 20px;
 }
 
-.faqQuestions{
+.faqQuestions {
     align-items: flex-start;
 }
 
-details{margin: 20px auto; }
-summary{font-weight: 500; margin-bottom: 10px; cursor: pointer; font-size: 2rem;}
-summary:hover{opacity: 0.7;}
+details {
+    margin: 20px auto;
+}
+
+summary {
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+summary:hover {
+    opacity: 0.7;
+}
 
 /* media queries */
 @media all and (min-width: 500px) {
@@ -78,18 +91,20 @@ summary:hover{opacity: 0.7;}
     }
 
     .quoteText {
-        font-size: 2.8rem;}
+        font-size: 2.8rem;
+    }
 
-    .quote{
-    font-size: 3.2rem;
-    margin: 0vh auto;
-    padding: 0vh 14vw;
-}
+    .quote {
+        font-size: 3.2rem;
+        margin: 0vh auto;
+        padding: 0vh 14vw;
+    }
 
-/* FAQ */
-.faqQuestions{
-    margin: 8vh auto; max-width: 400px; 
-}
+    /* FAQ */
+    .faqQuestions {
+        margin: 8vh auto;
+        max-width: 400px;
+    }
 
 }
 
@@ -124,12 +139,16 @@ summary:hover{opacity: 0.7;}
     }
 
     /* FAQ */
-.faqQuestions{
-    display: flex;  max-width: none; justify-content: center;
-}
+    .faqQuestions {
+        display: flex;
+        max-width: none;
+        justify-content: center;
+    }
 
-.faqContainer{
-    width: 50%; max-width: 500px; margin: 0px 50px;
-}
+    .faqContainer {
+        width: 50%;
+        max-width: 500px;
+        margin: 0px 50px;
+    }
 
 }

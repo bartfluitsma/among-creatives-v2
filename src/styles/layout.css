@@ -212,6 +212,13 @@ strong{font-weight: 700;}
     line-height: 120%;
 }
 
+/* rounded image */
+.roundedImage {
+    border-top-right-radius: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 10px;
+}
 
 @media all and (min-width: 600px) {
 
