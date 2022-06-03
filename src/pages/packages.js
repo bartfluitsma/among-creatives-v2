@@ -22,7 +22,7 @@ const ServicesPage = () => {
         <br /><br />
         <p>From mini-shoot, content refresh, product launching or just starting out, the packages below are designed to reply to your needs.</p>
         <br /><br />
-        <p><strong>All packages include</strong> a discovery call, a moodboard, free shipping delivery, pre- and post-production, props for the shoots, and a online gallery for the images. </p>
+        <p><strong>All packages include</strong> a discovery call, a moodboard, free shipping delivery (up to € 30,-), pre- and post-production, props for the shoots, and a online gallery for the images. </p>
         <br /><br />
         <a href="#packages"><button className="secondaryButton">Discover packages</button></a>
 
@@ -38,13 +38,13 @@ const ServicesPage = () => {
         <ul>
             <li>Moodboard</li>
             <li>High-quality resolution images</li>
-            <li>Photos styled with backgrounds and props to suit your brand aesthetic</li>
+            <li>Photos styled with backgrounds and props to suit your brand aesthetic*</li>
             <li>Pre- and post-production services include discovery call (optional), retouching/editing, mood board/shoot plan overview, retouching and editing</li>
-            <li>Free product delivery to my studio</li>
+            <li>Free product delivery to my studio (up to € 30,-)</li>
             <li>Digital delivery via a link emailed to you at the conclusion of the shoot</li>
           </ul>
           </div>
-          <p>If you require very specific props for your images eg. flowers, fruits or vegetables, particular backdrops etc. an additional prop fee will be added to your final invoice. This price will be determined when booking prior to the photoshoot.</p>
+          <p>*If you require very specific props for your images eg. flowers, fruits or vegetables, particular backdrops etc. an additional prop fee will be added to your final invoice. This price will be determined when booking prior to the photoshoot.</p>
       </div>
 
       {/* mini package */}

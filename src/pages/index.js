@@ -47,7 +47,7 @@ const IndexPage = () => (
           <StaticImage src='../images/about/Smiling product photographer Nass sitting outside.jpg'
             alt='Among Creatives logo'
             placeholder="blurred"
-            className="roundedImage"
+            className="roundedImage mb-10"
           />
         </div>
       </div>

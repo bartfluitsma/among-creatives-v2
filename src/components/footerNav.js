@@ -29,7 +29,7 @@ const FooterNav = () => {
                         </div>
                         <div>
                             <ul className="footerLinks">
-                                <li><Link to='/packages#priceList'>Price List</Link></li>
+                                <li><Link to='/packages#priceList'>Welcome guide</Link></li>
                                 <li><Link to='/about#FAQ'>FAQ</Link></li>
                             </ul>
                         </div>

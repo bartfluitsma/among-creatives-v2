@@ -12,6 +12,7 @@ export default class CenterMode extends Component {
       centerMode: true,
       infinite: true,
       slidesToShow: 3,
+      autoplay: true,
       speed: 500,
       dots: true,
       responsive: [
@@ -84,7 +85,7 @@ export default class CenterMode extends Component {
                 placeholder="blurred"
                 loading="lazy"
               />
-              <h4>Premium package</h4>
+              <h4>Full shoot package</h4>
               <p>Full content makeover for a high range of products.</p>
               <br /><br />
             </div>

@@ -49,7 +49,7 @@
     max-width: 400px;
     margin: 0px auto;
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.9fr 0.9fr 0.9fr;
 }

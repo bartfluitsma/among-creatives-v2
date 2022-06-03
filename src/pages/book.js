@@ -20,14 +20,14 @@ const BookingPage = () => {
                 <input type="hidden" name="bot-field"/>
                 <input type="hidden" name="form-name" value="booking"/> {/* name of the person */}
                 <label>
-                    What is your name?<span className="asterix">*</span>
+                   Your name<span className="asterix">*</span>
                     <br/>
                     <input type="text" pattern="[a-z]*" name="name" id="name" required/>
                 </label>
 
                 {/* email address */}
                 <label>
-                    What is your email address<span className="asterix">*</span>
+                    Email address<span className="asterix">*</span>
                     <br/>
                     <input type="email" name="email" id="email" required/>
                 </label>
@@ -127,7 +127,12 @@ const BookingPage = () => {
 
                     <label htmlFor="premiumShoot">
                         <input type="radio" name="package" id="premiumShoot" required/>
-                        Premium Shoot
+                        Full Shoot
+                    </label>
+
+                    <label htmlFor="monthlyShoot">
+                        <input type="radio" name="package" id="monthlyShoot" required/>
+                        Monthly package
                     </label>
 
                     <label htmlFor="customShoot">

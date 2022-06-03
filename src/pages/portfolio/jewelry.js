@@ -45,7 +45,7 @@ const JewelryPage = ({data}) => (
                     {data.allFile.edges.map(image => (
                         <div key={image.node.id}>
                             <a href={image.node.publicURL}
-                                arial-label={image.node.base.replace(/\d+/g, '').split('-').join(' ')}>
+                                arial-label={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}>
                                 <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
                                     alt={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}/>
                             </a>

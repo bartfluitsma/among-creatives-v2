@@ -17,9 +17,18 @@ const breakpointColumns = {
 
 // options lightbox
 const options = {
-  buttons: { 
+  settings: {
+    disablePanzoom: true,
+  },
+  caption: {
+    showCaption: false,    
+    captionColor: 'transparent',
+  },
+  buttons: {
     showDownloadButton: false,
-  }
+  },
+  // thumbnails: {},
+  // progressBar:{},
 }
 
 const FoodPage = ({data}) => (
@@ -38,7 +47,7 @@ const FoodPage = ({data}) => (
                     {data.allFile.edges.map(image => (
                         <div key={image.node.id}>
                             <a href={image.node.publicURL}
-                                arial-label={image.node.base.split('-').join(' ').split('.')[0]}>
+                                arial-label={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}>
                                 <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
                                     alt={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}/>
                             </a>
