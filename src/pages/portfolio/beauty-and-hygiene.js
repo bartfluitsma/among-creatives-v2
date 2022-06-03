@@ -40,7 +40,7 @@ const BeautyAndHygienePage = ({data}) => (
                             <a href={image.node.publicURL}
                                 arial-label={image.node.base.split('-').join(' ').split('.')[0]}>
                                 <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
-                                    alt={image.node.base.split('-').join(' ').split('.')[0]}/>
+                                    alt={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}/>
                             </a>
                         </div>
                     ))} 

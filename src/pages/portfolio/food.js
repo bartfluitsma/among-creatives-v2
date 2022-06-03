@@ -24,7 +24,7 @@ const options = {
 
 const FoodPage = ({data}) => (
     <Layout>
-        <Seo title="Accessories"/>
+        <Seo title="Food"/>
         <div className="mainText">
             <h1>Food</h1>
             <p>Welcome to the food gallery.</p>
@@ -40,7 +40,7 @@ const FoodPage = ({data}) => (
                             <a href={image.node.publicURL}
                                 arial-label={image.node.base.split('-').join(' ').split('.')[0]}>
                                 <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
-                                    alt={image.node.base.split('-').join(' ').split('.')[0]}/>
+                                    alt={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}/>
                             </a>
                         </div>
                     ))} 

@@ -34,7 +34,7 @@ const FragrancesPage = ({data}) => (
         <Seo title="Fragrances"/>
         <div className="mainText">
             <h1>Fragrances</h1>
-            <p>Welcome to the fragrances page.</p>
+            <p>Welcome to the fragrances gallery.</p>
         </div>
 
         <SimpleReactLightbox>
@@ -47,7 +47,7 @@ const FragrancesPage = ({data}) => (
                             <a href={image.node.publicURL}
                                 arial-label={image.node.base.replace(/\d+/g, '').split('-').join(' ')}>
                                 <GatsbyImage image={image.node.childImageSharp.gatsbyImageData}
-                                    alt={image.node.base.replace(/\d+/g, '').split('-').join(' ')}/>
+                                    alt={image.node.base.replace(/\d+/g, '').split('-').join(' ').split('.')[0]}/>
                             </a>
                         </div>
                     ))} 
