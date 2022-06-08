@@ -133,6 +133,12 @@ h4 {
     margin-top: 30px;
 }
 
+.thankYouContainer p{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
 @media all and (min-width: 800px) {
     h1 {
         font-size: 4.5rem;
