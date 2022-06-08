@@ -21,15 +21,15 @@ const ContactPage = () => {
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <label>
-          Your name <br />
+          Your name<span className="asterix">*</span> <br />
           <input type="text" name="name" id="name" required />
         </label>
         <label>
-          Email address <br />
+          Email address<span className="asterix">*</span> <br />
           <input type="email" name="email" id="email" required />
         </label>
         <label>
-          Please write your message <br />
+          Please write your message<span className="asterix">*</span> <br />
           <textarea name="message" id="message" rows="5" required />
         </label>
           <button type="submit">Send message</button>
