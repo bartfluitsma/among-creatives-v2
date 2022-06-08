@@ -108,7 +108,7 @@ const ServicesPage = () => {
           <h2>Monthly package</h2>
           <p>Make sure you’re good for some new photos each month! A new brief is reviewed each month to ensure the latest brand strategy.</p>
           <br />
-          <p><strong>Up to 15 images per month</strong></p>
+          <p><strong>Up to 10 images per month</strong></p>
         </div>
 
         <div className="imageContainer imageRight">
@@ -135,7 +135,7 @@ const ServicesPage = () => {
         <p>Download the welcome guide to get the full-service details.</p>
 
 
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="priceList" action="/thank-you">
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="priceList" action="/thank-you-download">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="priceList" />
           <label>

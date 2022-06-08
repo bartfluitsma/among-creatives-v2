@@ -10,7 +10,7 @@ const ThankYouPage = () => (
 
     <div className="thankYouContainer">
       <h1>Thank you!</h1>
-      <p>I'll be in touch soon!</p>
+      <p>Thank you so much for your interest in working together! I will be in touch soon :)</p>
       <Link to='/'>
         <button className="secondaryButton">Back to homepage</button>
       </Link>
