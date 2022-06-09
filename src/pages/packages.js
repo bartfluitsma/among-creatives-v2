@@ -144,7 +144,7 @@ const ServicesPage = () => {
           <label className="labelNoMargin">
             <input type="email" name="email" id="email" placeholder="Email" required />
           </label>
-          <button type="submit">Download Pricelist</button>
+          <button type="submit">Download Welcome Guide</button>
         </form>
       </div>
 
