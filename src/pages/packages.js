@@ -21,8 +21,7 @@ const ServicesPage = () => {
         <p>I will be here in every step to make sure we create a seamless, fun and efficient work together!</p>
         <br /><br />
         <p>From mini-shoot, content refresh, product launching or just starting out, the packages below are designed to reply to your needs.</p>
-        <br /><br />
-        <p><strong>All packages include</strong> a discovery call, a moodboard, free shipping delivery (up to € 30,-), pre- and post-production, props for the shoots, and a online gallery for the images. </p>
+
         <br /><br />
         <a href="#packages"><button className="secondaryButton">Discover packages</button></a>
 
