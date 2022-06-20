@@ -20,15 +20,14 @@ const PortfolioPage = () => {
         {/* photo categories */}
         <div className="containerCategories">
 
-
-        <Link to="/portfolio/jewelry">
+        <Link to="/portfolio/beauty-and-hygiene">
         <div className="categoriesPortfolio">
           <div className="categoryCard">
-          <StaticImage src='../../images/categories/rings-in-shadow-with-travertine.jpg'
-            alt='rings-in-shadow-with-travertine'
+          <StaticImage src='../../images/homepage/face-oil-product-photography-among-creatives.jpg'
+            alt='organic-soap-and-oranges'
             placeholder="blurred"
           />
-          <h2>Jewelry</h2>
+          <h2>Beauty & Hygiene</h2>
           </div>
         </div>
         </Link>
@@ -41,18 +40,6 @@ const PortfolioPage = () => {
             placeholder="blurred"
           />
           <h2>Stationery</h2>
-          </div>
-        </div>
-        </Link>
-
-        <Link to="/portfolio/beauty-and-hygiene">
-        <div className="categoriesPortfolio">
-          <div className="categoryCard">
-          <StaticImage src='../../images/homepage/face-oil-product-photography-among-creatives.jpg'
-            alt='organic-soap-and-oranges'
-            placeholder="blurred"
-          />
-          <h2>Beauty & Hygiene</h2>
           </div>
         </div>
         </Link>
@@ -77,6 +64,18 @@ const PortfolioPage = () => {
             placeholder="blurred"
           />
           <h2>Accessories</h2>
+          </div>
+        </div>
+        </Link>
+
+        <Link to="/portfolio/jewelry">
+        <div className="categoriesPortfolio">
+          <div className="categoryCard">
+          <StaticImage src='../../images/categories/rings-in-shadow-with-travertine.jpg'
+            alt='rings-in-shadow-with-travertine'
+            placeholder="blurred"
+          />
+          <h2>Jewelry</h2>
           </div>
         </div>
         </Link>
