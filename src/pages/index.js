@@ -44,7 +44,7 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="secondHalf">
-          <StaticImage src='../images/about/Smiling product photographer Nass sitting outside.jpg'
+          <StaticImage src='../images/homepage/nass-product-photographer-working.jpg'
             alt='Among Creatives logo'
             placeholder="blurred"
             className="roundedImage mb-10"

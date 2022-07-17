@@ -45,7 +45,7 @@ const AboutPage = () => (
           </Link>
         </div>
         <div className="secondHalfAbout">
-          <StaticImage src='../images/homepage/nass-product-photographer-working.png'
+          <StaticImage src='../images/about/Smiling product photographer Nass sitting outside.jpg'
             alt='Among Creatives logo'
             placeholder="blurred"
             className="roundedImage"
